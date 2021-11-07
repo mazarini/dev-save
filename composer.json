@@ -1,0 +1,61 @@
+{
+    "name": "mazarini/dev",
+    "description": "Gestion de coût.",
+    "type": "project",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Mazarini",
+            "email": "mazarini@protonmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "symfony/console": "5.4.*",
+        "symfony/flex": "^1.17",
+        "symfony/framework-bundle": "5.4.*",
+        "symfony/runtime": "5.4.*",
+        "symfony/yaml": "5.4.*"
+    },
+    "minimum-stability": "dev",
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": true,
+            "require": "5.4.*"
+        }
+    },
+    "replace": {
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php74": "*",
+        "symfony/polyfill-php73": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        }
+    }
+}
