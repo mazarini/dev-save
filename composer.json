@@ -13,9 +13,15 @@
         "php": ">=7.4.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "composer/package-versions-deprecated": "^1.0@dev",
+        "doctrine/doctrine-bundle": "2.5.x-dev",
+        "doctrine/doctrine-migrations-bundle": "3.2.x-dev",
+        "doctrine/orm": "3.0.x-dev",
         "symfony/console": "5.4.*",
+        "symfony/dotenv": "5.4.*",
         "symfony/flex": "^1.17",
         "symfony/framework-bundle": "5.4.*",
+        "symfony/proxy-manager-bridge": "5.4.*",
         "symfony/runtime": "5.4.*",
         "symfony/yaml": "5.4.*"
     },
@@ -57,5 +63,12 @@
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         }
+    },
+    "require-dev": {
+        "symfony/debug-bundle": "5.4.*",
+        "symfony/maker-bundle": "3.x-dev",
+        "symfony/monolog-bundle": "^3.0",
+        "symfony/stopwatch": "5.4.*",
+        "symfony/web-profiler-bundle": "5.4.*"
     }
 }
