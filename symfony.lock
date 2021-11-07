@@ -106,6 +106,9 @@
     "psr/log": {
         "version": "1.1.4"
     },
+    "symfony/asset": {
+        "version": "5.4.x-dev"
+    },
     "symfony/cache": {
         "version": "5.4.x-dev"
     },
@@ -317,6 +320,9 @@
     },
     "symfony/yaml": {
         "version": "5.4.x-dev"
+    },
+    "twig/extra-bundle": {
+        "version": "3.x-dev"
     },
     "twig/twig": {
         "version": "3.x-dev"
