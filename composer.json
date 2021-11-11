@@ -10,19 +10,23 @@
         }
     ],
     "require": {
-        "php": ">=7.4.0",
+        "php": "^7.4.1 || ^8.0.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "composer/package-versions-deprecated": "^1.0@dev",
-        "doctrine/doctrine-bundle": "2.5.x-dev",
-        "doctrine/doctrine-migrations-bundle": "3.2.x-dev",
-        "doctrine/orm": "3.0.x-dev",
+        "composer/package-versions-deprecated": "^1.11",
+        "doctrine/annotations": "^1.0",
+        "doctrine/doctrine-bundle": "^2.1",
+        "doctrine/doctrine-migrations-bundle": "^3.0",
+        "doctrine/orm": "^2.7",
+        "easycorp/easyadmin-bundle": "^3.5",
         "symfony/console": "5.4.*",
         "symfony/dotenv": "5.4.*",
         "symfony/flex": "^1.17",
         "symfony/framework-bundle": "5.4.*",
         "symfony/proxy-manager-bridge": "5.4.*",
         "symfony/runtime": "5.4.*",
+        "symfony/security-bundle": "5.4.*",
+        "symfony/twig-bundle": "5.4.*",
         "symfony/yaml": "5.4.*"
     },
     "minimum-stability": "dev",
@@ -65,10 +69,13 @@
         }
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "3.5.x-dev",
         "symfony/debug-bundle": "5.4.*",
         "symfony/maker-bundle": "3.x-dev",
         "symfony/monolog-bundle": "^3.0",
         "symfony/stopwatch": "5.4.*",
-        "symfony/web-profiler-bundle": "5.4.*"
+        "symfony/var-dumper": "5.4.*",
+        "symfony/web-profiler-bundle": "5.4.*",
+        "zenstruck/foundry": "^1.1"
     }
 }
