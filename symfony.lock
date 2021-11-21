@@ -11,6 +11,15 @@
             "config/packages/test/dama_doctrine_test_bundle.yaml"
         ]
     },
+    "easycorp/easyadmin-bundle": {
+        "version": "3.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "b131e6cbfe1b898a508987851963fff485986285"
+        }
+    },
     "php-webdriver/webdriver": {
         "version": "1.12.0"
     },
@@ -20,8 +29,14 @@
     "symfony/dom-crawler": {
         "version": "v5.4.0-BETA1"
     },
+    "symfony/form": {
+        "version": "v5.4.0-BETA2"
+    },
     "symfony/http-client": {
         "version": "v5.4.0-BETA3"
+    },
+    "symfony/intl": {
+        "version": "v5.4.0-BETA2"
     },
     "symfony/maker-bundle": {
         "version": "1.36",
@@ -32,6 +47,9 @@
             "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
         }
     },
+    "symfony/options-resolver": {
+        "version": "v5.4.0-BETA1"
+    },
     "symfony/panther": {
         "version": "1.1",
         "recipe": {
@@ -40,6 +58,9 @@
             "version": "1.0",
             "ref": "877d853a05c6713665a2f4b954734592680abff6"
         }
+    },
+    "symfony/password-hasher": {
+        "version": "v5.4.0-BETA1"
     },
     "symfony/phpunit-bridge": {
         "version": "6.0",
@@ -56,7 +77,53 @@
             "tests/bootstrap.php"
         ]
     },
+    "symfony/polyfill-intl-icu": {
+        "version": "v1.23.0"
+    },
+    "symfony/polyfill-uuid": {
+        "version": "v1.23.0"
+    },
     "symfony/process": {
         "version": "v5.4.0-BETA3"
+    },
+    "symfony/security-bundle": {
+        "version": "5.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.3",
+            "ref": "3307d76caa2d12fb10ade57975beb3d8975df396"
+        },
+        "files": [
+            "config/packages/security.yaml"
+        ]
+    },
+    "symfony/security-core": {
+        "version": "v5.4.0-BETA3"
+    },
+    "symfony/security-csrf": {
+        "version": "v5.4.0-BETA1"
+    },
+    "symfony/security-guard": {
+        "version": "v5.4.0-BETA1"
+    },
+    "symfony/security-http": {
+        "version": "v5.4.0-BETA2"
+    },
+    "symfony/translation": {
+        "version": "5.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.3",
+            "ref": "da64f5a2b6d96f5dc24914517c0350a5f91dee43"
+        },
+        "files": [
+            "config/packages/translation.yaml",
+            "translations/.gitignore"
+        ]
+    },
+    "symfony/uid": {
+        "version": "v5.4.0-BETA1"
     }
 }
