@@ -24,7 +24,8 @@ security:
             custom_authenticator: App\Security\LoginFormAuthenticator
             entry_point: App\Security\AuthenticationEntryPoint
 
-            logout: true
+            logout:
+                path: app_security_logout
 
             remember_me:
                 secret: "%kernel.secret%"

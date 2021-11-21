@@ -76,7 +76,7 @@ class LoginFormAuthenticator extends AbstractAuthenticator
         $request->getSession()->set(Security::AUTHENTICATION_ERROR, $exception);
 
         return new RedirectResponse(
-            $this->router->generate('app_login')
+            $this->router->generate('app_security_login')
         );
     }
 
@@ -85,7 +85,7 @@ class LoginFormAuthenticator extends AbstractAuthenticator
         // add a custom flash message and redirect to the login page
         $request->getSession()->getFlashBag()->add('note', 'You have to login in order to access this page.');
 
-        return new RedirectResponse($this->urlGenerator->generate('security_login'));
+        return new RedirectResponse($this->urlGenerator->generate('app_security_login'));
 
         /*
          * If you would like this class to control what happens when an anonymous user accesses a

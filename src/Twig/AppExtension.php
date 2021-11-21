@@ -28,6 +28,6 @@ class AppExtension extends AbstractExtension
 
     public function renderHeader(Environment $environment)
     {
-          return $environment->render('header.html.twig');
+          return $environment->render('base/header.html.twig');
     }
 }

@@ -27,12 +27,12 @@
         "symfony/runtime": "5.4.*",
         "symfony/security-bundle": "5.4.*",
         "symfony/twig-bundle": "5.4.*",
-        "symfony/webpack-encore-bundle": "dev-main",
+        "symfony/webpack-encore-bundle": "^1.12",
         "symfony/yaml": "5.4.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "conflict": {
         "symfony/symfony": "*"
     },
@@ -72,9 +72,9 @@
         }
     },
     "require-dev": {
-        "doctrine/doctrine-fixtures-bundle": "3.5.x-dev",
+        "doctrine/doctrine-fixtures-bundle": "^3.4",
         "symfony/debug-bundle": "5.4.*",
-        "symfony/maker-bundle": "3.x-dev",
+        "symfony/maker-bundle": "^1.36",
         "symfony/monolog-bundle": "^3.0",
         "symfony/stopwatch": "5.4.*",
         "symfony/var-dumper": "5.4.*",
